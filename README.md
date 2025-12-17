@@ -1,4 +1,5 @@
 # quantile_regression
+
 Quantile regression implementation with statsmodels using Engel dataset. Analyzes conditional distributions, compares with OLS, visualizes results, and demonstrates inventory optimization applications. Includes diagnostics and alternative approaches.
 
 
@@ -47,6 +48,7 @@ Service level reorder points at mean income:
 - `matplotlib` - Visualization
 
 ### Core Methodology
+
 ```python
 # Basic quantile regression implementation
 mod = smf.quantreg("foodexp ~ income", data)
@@ -54,6 +56,7 @@ res = mod.fit(q=0.5)  # Median regression
 ```
 
 ### Advanced Techniques
+
 1. **Multiple Quantile Estimation**: Simultaneous estimation across quantile spectrum
 2. **Composite Quantile Regression**: Pooled estimation for improved efficiency
 3. **Sparsity Analysis**: Quantile-specific precision assessment
@@ -149,4 +152,5 @@ This notebook serves as an educational resource. For questions, suggestions, or 
 
 # Note
 
-This notebook is designed for educational and research purposes. Real-world applications may require additional considerations and validation.
+This notebook is designed for educational and research purposes.
+Real-world applications may require additional considerations and validation.
