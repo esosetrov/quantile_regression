@@ -9,13 +9,13 @@ This notebook provides a complete workflow for quantile regression analysis, fro
 
 ## Key Features
 
-- **Complete Implementation**: Full quantile regression workflow using `statsmodels.QuantReg`
-- **Multiple Quantile Analysis**: Estimates from τ=0.05 to τ=0.95 with 0.1 increments
-- **Comparative Analysis**: Direct comparisons with OLS regression results
-- **Advanced Diagnostics**: Residual analysis, sparsity measures, heteroscedasticity detection
-- **Practical Applications**: Inventory optimization with reorder point calculation
-- **Alternative Approaches**: Composite quantile regression and methodological extensions
-- **Comprehensive Visualization**: Multiple plotting techniques for result interpretation
+- **Complete Implementation**: Full quantile regression workflow using `statsmodels.QuantReg`.
+- **Multiple Quantile Analysis**: Estimates from τ=0.05 to τ=0.95 with 0.1 increments.
+- **Comparative Analysis**: Direct comparisons with OLS regression results.
+- **Advanced Diagnostics**: Residual analysis, sparsity measures, heteroscedasticity detection.
+- **Practical Applications**: Inventory optimization with reorder point calculation.
+- **Alternative Approaches**: Composite quantile regression and methodological extensions.
+- **Comprehensive Visualization**: Multiple plotting techniques for result interpretation.
 
 ## Key Findings from the Analysis
 
@@ -23,14 +23,14 @@ This notebook provides a complete workflow for quantile regression analysis, fro
 The income coefficient increases from 0.3434 (τ=0.05) to 0.7091 (τ=0.95), demonstrating that the effect of income on food expenditure is not constant across the distribution.
 
 ### 2. **Heteroscedasticity Detection**
-- Heteroscedasticity ratio R = 0.5094 > 0
-- Confirms increasing variability in food expenditure with higher income
-- Invalidates key OLS assumption of homoscedasticity
+- Heteroscedasticity ratio R = 0.5094 > 0.
+- Confirms increasing variability in food expenditure with higher income.
+- Invalidates key OLS assumption of homoscedasticity.
 
 ### 3. **Model Comparisons**
-- **OLS**: Intercept = 147.48, Slope = 0.4852, R² = 0.8304
-- **LAD (Median)**: Intercept = 81.48, Slope = 0.5602, Pseudo R² = 0.6206
-- **Composite Quantile (τ=0.25,0.5,0.75)**: Average slope = 0.5594
+- **OLS**: Intercept = 147.48, Slope = 0.4852, R² = 0.8304.
+- **LAD (Median)**: Intercept = 81.48, Slope = 0.5602, Pseudo R² = 0.6206.
+- **Composite Quantile (τ=0.25,0.5,0.75)**: Average slope = 0.5594.
 
 ### 4. **Practical Inventory Applications**
 Service level reorder points at mean income:
@@ -42,10 +42,10 @@ Service level reorder points at mean income:
 ## Technical Implementation
 
 ### Libraries Used
-- `statsmodels` (v0.14.0+) - Quantile regression implementation
-- `pandas` (v2.0.0+) - Data manipulation
-- `numpy` - Numerical operations
-- `matplotlib` - Visualization
+- `statsmodels` (v0.14.0+) - Quantile regression implementation;
+- `pandas` (v2.0.0+) - Data manipulation;
+- `numpy` - Numerical operations;
+- `matplotlib` - Visualization.
 
 ### Core Methodology
 
